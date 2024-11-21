@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#book {
+    width: 800px;
+    height: 600px;
+    perspective: 1500px;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.back-cover {
+    background-size: cover;
+    background-image: url('cover/background.jpg');
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.articles {
+    padding: 1.2rem;
+}
+
+h2 {
+    margin: 0 0 1rem 0 !important;
+    font-size: 1.6rem !important;
+    color: #21255f;
+    transition: color 0.3s ease-out;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.article-preview {
+    cursor: pointer;
+    min-height: 100%;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+}
+
+.arabic span {
+    font-family:Omar;
+    font-size:24px!important;
+    line-height:1.8!important
+}
