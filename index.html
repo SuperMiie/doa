@@ -176,26 +176,28 @@
 $(document).ready(function() {
     function loadApp() {
         const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-        const opsi = isMobile ? {
-            width: 430,
-            height: 650,
-            elevation: 50,
-            inclination: 50,
-            display: 'single',
-            autocenter: true,
-            acceleration: true,
-            gradients: true,
-            zoom: 2,
-            duration: 50
-        } : {
-            width: 922,
-            height: 600,
-            elevation: 50,
-            gradients: true,
-            autoCenter: true
-        };
-
-        $('.flipbook').turn({opsi});
+	if( isMobile == true ){
+		$('.flipbook').turn({
+		    width: 430,
+		    height: 650,
+		    elevation: 50,
+		    inclination: 50,
+		    display: 'single',
+		    autocenter: true,
+		    acceleration: true,
+		    gradients: true,
+		    zoom: 2,
+		    duration: 50
+		});
+	} else {
+        	$('.flipbook').turn({
+	            width: 922,
+	            height: 600,
+	            elevation: 50,
+	            gradients: true,
+	            autoCenter: true
+	        });
+	}
     }
 
     // Check for CSS transform support 
