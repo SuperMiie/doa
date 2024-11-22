@@ -176,10 +176,7 @@
 	$(document).ready(function() {
     function loadApp() {
         const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-        console.log("User Agent: ", navigator.userAgent);
-        console.log("Is mobile: ", isMobile);
-
-        const options = isMobile ? {
+        const opsi = isMobile ? {
             width: 430,
             height: 650,
             elevation: 50,
@@ -198,9 +195,9 @@
             autoCenter: true
         };
 
-        console.log("Options: ", options);
+        console.log("Options: ", opsi);
 
-        $('.flipbook').turn(options);
+        $('.flipbook').turn(opsi);
     }
 
     // Check for CSS transform support 
