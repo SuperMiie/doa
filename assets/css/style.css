@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #b8b8b8;
     margin: 0;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .back-cover {
     background-size: cover;
-    background-image: url('cover/background.jpg');
+    background-image: url('../../cover/background.jpg');
 }
 
 .cover {
@@ -62,4 +62,17 @@ h2 {
     font-family:Omar;
     font-size:24px!important;
     line-height:1.8!important
+}
+
+/* Media queries untuk layar kecil */ 
+@media (max-width: 768px) { 
+    #book { 
+        width: 100% !important; 
+        height: auto; 
+    } 
+    
+    .page img { 
+        width: 100% !important; 
+        height: auto; 
+    }
 }
