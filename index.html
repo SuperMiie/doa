@@ -173,7 +173,7 @@
 	</div>
 </div>
 <script type="text/javascript">
-	$(document).ready(function() {
+$(document).ready(function() {
     function loadApp() {
         const isMobile = /Mobi|Android/i.test(navigator.userAgent);
         const opsi = isMobile ? {
@@ -195,9 +195,7 @@
             autoCenter: true
         };
 
-        console.log("Options: ", opsi);
-
-        $('.flipbook').turn(opsi);
+        $('.flipbook').turn({opsi});
     }
 
     // Check for CSS transform support 
