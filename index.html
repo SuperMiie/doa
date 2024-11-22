@@ -1,171 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
     <title>Do'a Kubur</title>
     <link rel="icon" type="image/x-icon" href="favicon.webp">
-    <link rel="stylesheet" href="style_flip.css">
-    <link rel="stylesheet" href="app-d95d51b6.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="page-flip.browser.js"></script>
+	<link rel="stylesheet" href="assets/css/basic.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/font_style.css">
 </head>
-<body style="background: #b7b6b6;">
-    <div id="book">
-        <div class="page cover">
-            <img src="cover/cover_book.jpg">
-        </div>
-        <div class="page back-cover">
-            <article class="articles">
-                <div class="article-preview">
-                     <span style="font-size: 16px; text-align: center;">
-                        Do'a ini diambil dari Kitab <em>Majmu Syarif</em>, Kitab <em>Perukunan&nbsp;Melayu,</em> dan Kitab <em>Maslakul Akhyar</em> yang biasa dipraktikkan di masyarakat.
-                     </span>
-                </div>
-            </article>
-            <article class="articles">
-                <div class="article-preview">
-                    <!-- Referensi -->
-                     <span style="font-size: 16px; text-align: center;">
-                        Referensi : <strong><a href="https://islam.nu.or.id/syariah/ini-bacaan-talqin-dan-tahlil-mayit-VKm62">NU Online</a></strong><br>
-                        Penulis : <strong><a href="https://nu.or.id/author/alhafiz-kurniawan">Alhafiz Kurniawan</a></strong><br>
-                        Editor : <strong>SuperMiie</strong>
-                     </span>
-                </div>
-            </article>
-            <article class="articles">
-                <div class="article-preview">
-                     <span style="font-size: 16px; text-align: center;">
-                        <i>
-                            Dirangkum pada : <br>
-                            <strong>20 Jumadil Awal, 1446</strong> <br><br>
-                            Lokasi : <br>
-                            <strong>Kel. Karang Timur, Kec. Karang tengah, Kota Tangerang (15157)</strong>
-                        </i>
-                     </span>
-                </div>
-            </article>
-        </div>
-        <div class="page back-cover" dir="rtl">
-            <article class="articles">
-                <div class="article-preview">
-                    <div class="arabic" style="text-align: center;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">۞اَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ۞</span><br>
-                            <span style="line-height:2;"> ۞بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ۞</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;"> الْحَمْدُ لِلهِ رَبِّ الْعَالَمِيْنَ حَمْدَ الشَّاكِرِيْنَ حَمْدَ النَّاعِمِيْنَ حَمْدًا يُّوَافِى نِعَمَهُ وَيُكَافِىءُ مَزِيْدَهُ، يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِيْ لِجَلَالِ وَجْهِكَ وَعَظِيْمِ سُلْطَانِكَ.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">سُبْحَانَكَ لَا نُحْصِى ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ، فَلَكَ الحَمْدُ قَبْلَ الرِّضَى وَلَكَ الحَمْدُ بَعْدَ الرِّضَى وَلَكَ الحَمْدُ إِذَا رَضِيْتَ عَنَّا دَائِمًا أَبَدًا.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right; margin-bottom: 2rem;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اللَّهُمَّ صَلِّ علَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اَلِ سَيِّدِنَا مُحِمَّدٍ.</span>
-                        </span>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="page back-cover" dir="rtl">
-            <article class="articles">
-                <div class="article-preview">
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اللَّهُمَّ كَمَا خَصَّصْتَنَا بِكِتَابِكَ الكَرِيْمِ وَهَدَيْتَنَا إِلَى صِرَاتِكَ المُسْتَقِيْمِ، أَصْلِحْ بِهِ مِنَّا جَمِيْعَ مَا فَسَدَ وَطَهِّرْ بِهِ مِنَّا مَا ظَهَرَ وَمَا بَطَنَ.</span>
-                        </span>
-                    </div>    
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اللَّهُمَّ اشْرَحْ بِالقُرْآنِ صُدُوْرَنَا وَيَسِّرْ بِهِ أُمُوْرَنَا وَعَظِّمْ بِهِ أُجُوْرَنَا وَحَسِّنْ بِهِ أَخْلَاقَنَا وَوَسِّعْ بِهِ أَرْزَاقَنَا وَنَوِّرْ بِهِ قُبُوْرَنَا.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اللَّهُمَّ تَقَبَّلْ وَاَوْصِلْ ثَوَاَبَ مَا قَرَأْنَاهُ مِنْ الْقُرْاَنِ الْعَظِيْمِ وَمَا هَلَلْنَا وَمَا سَبَّحْنَا وَمَا اسْتَغْفَرْنَا وَمَا صَلَّيْنَا عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">هَدِيَّةً مِنَّا وَاصِلَةً وَرَحْمَةً نَازِلَةً وَبَرَكَةً شَامِلَةً اِلَى</span>
-                        </span>
-                    </div>  
-                </div>
-            </article>
-        </div>
-        <div class="page back-cover" dir="rtl">
-            <article class="articles">
-                <div class="article-preview">
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">حَضَرَاتِ حَبِيْبِنَا وَشَفِيْعِنَا وَقُرَّةِ اَعْيُنِنَا سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">وَاِلَى جَمِيْعِ إِخْوَانِهِ مِنَ الْأَنْبِيَاءِ وَالْمُرْسَلِيْنَ وَالْأَوْلِيَاءِ وَالشُّهَدَاءِ وَالصَّالِحِيْنَ وَالصَّحَابَةِ وَالتَّابِعِيْنَ وَالْعُلَمَاءِ الْعَامِلِيْنَ وَالْمُصَنِّفِيْنَ الْمُخْلِصِيْنَ وَجَمِيْعِ الْمُجَاهِدِيْنَ فِي سَبِيْلِ اللهِ رَبِّ الْعَالَمِيْنَ وَالْمَلَائِكَةِ الْمُقَرَّبِيْنَ.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right; margin-top: 0.5rem;">
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">خُصُوْصًا إِلَى أَرْوَاحِ جَمِيْعِ أَهْلِ الْقُبُوْرِ مِنَ الْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ مِنْ مَشَارِقِ الْاَرْضِ إِلَى مَغَارِبِهَا بَرِّهَا وَبَحْرِهَا، خُصُوْصًا إِلَى آبَاءِنَا وَاُمَّهَاتِنَا وَأَجْدَادِنَا وَجَدَّاتِنَا وَنَخَصُّ خَصُوْصًا إِلَى مَنِ اجْتَمَعْنَا هَهُنَا بِسَبَبِهِ وَلِاَجْلِهِ.</span>
-                        </span>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="page back-cover" dir="rtl">
-            <article class="articles">
-                <div class="article-preview">
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">وَنَخَصُّ خَصُوْصًاإِلَى الرُوحِ …</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right; margin-top: 1rem;">
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اللَّهُمَّ أَنْزِلْ فِيْ قَبْرِهِ الرَّحْمَةَ وَالضِّيَاءَ وَالنُّوْرَ، وَالبَهْجَةَ وَالرَوْحَ وَالرَيْحَانَ وَالسُّرُوْرَ، مِنْ يَوْمِنَا هَذَا إِلَى يَوْمِ البَعْثِ وَالنُّشُوْرِ، إِنَّكَ مَلِكٌ رَبٌّ غَفُوْرٌ.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right; margin-top: 1rem;">
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اللَّهُمَّ اجْعَلِ القُرْآنَ العَظِيْمَ فِي قَبْرِهِ مُؤْنِسًا، وَفِي القِيَامَةِ شَافِعًا، وَفِي الحَشْرِ ضِيَاءً وَظِلًّا وَدَلِيْلًا، وَفِي المِيْزَانِ رَاجِحًا، وَعَلَى الصِّرَاطِ نُوْرًا وَقَائِدًا، وَعَنِ النَّارِ سِتْرًا وَحِجَابًا، وَفِي الجَنَّةِ رَفِيْقًا.</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right; margin-top: 0.5rem;">
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">اَللَّهُمَّ اغْفِرْ لَهُمْ وَارْحَمْهُمْ وَعَافِهِمْ وَاعْفُ عَنْهُمْ. اللَّهُمَّ اَنْزِلِ الرَّحْمَةَ وَالْمَغْفِرَةَ عَلَى أَهْلِ الْقُبُوْرِ مِنْ أَهْلِ لَاالَهَ اِلَّا اللهُ مُحَمَّدٌ رَّسُوْلُ اللهِ.</span>
-                        </span>
-                    </div> 
-                </div>
-            </article>
-        </div>
-        <div class="page back-cover" dir="rtl">
-            <article class="articles">
-                <div class="article-preview">
-                    <div class="arabic" style="text-align: right;"><br>
-                        <span style="font-size:24px;">
-                            <span style="line-height:2;">رَبَّنَا أَرِنَا الْحَقَّ حَقًّا وَارْزُقْنَا اتِّبَاعَهُ، وَأَرِنَا الْبَاطِلَ بَاطِلًا وَارْزُقْنَا اجْتِنَابَهُ. رَبَّنَا آتِنَا فِى الدُّنْيَا حَسَنَةً، وَفِى الْآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ، سًبْحَانَ رَبَّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُوْنَ، وَسَلَامٌ عَلَى الْمُرْسَلِيْنَ، وَالْحَمْدُ لِلهِ رَبِّ الْعَلَمِيْنَ. اَلْفَاتِحَةْ …</span>
-                        </span>
-                    </div>
-                    <div class="arabic" style="text-align: right; margin-top: 0.2rem;">
-                        <span style="font-size:23px;">
-                            <span style="line-height:2;">وَاعْفُ عَنَّا يَا كَرِيْمُ *٢ &nbsp;بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ ارْحَمْنَا. اَللَّهُمَّ بِحَقِّ الفَاتِحَةِ وَبِسِرِّ الفَاتِحَةِ وَبِكَرَامَةِ الفَاتِحَةِ، يَا فَارِجَ الهَمِّ يَا كَاشِفَ الغَمِّ يَا مَنْ لِعَبْدِهِ يَغْفِرُ وَيَرْحَمُ، اَللَّهُمَّ اغْفِرْ ذُنُوْبَنَا وَاسْتُرْ عُيُوْبَنَا وَفَرِّجْ هُمُوْمَنَا وَاكْشِفْ غُمُوْمَنَا وَأَصْلِحْ ذَاتَ بَيْنِنَا، دَعْوَاهُمْ فِيْهَا سُبْحَانَكَ اَللَّهُمَّ وَتَحِيَّتُهُمْ فِيْهَا سَلَامٌ، وَآخِرُ دَعْوَاهُمْ أَنِ الْحَمْدُ لِلهِ رَبِّ الْعَلَمِيْنَ</span>
-                        </span>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="page cover">
-            <img src="cover/back_cover.jpg">
-        </div>
-    </div>
-    <script src="script.js"></script>
+<body>
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div class="page cover">
+				<img src="cover/cover_book.jpg">
+			</div>
+			<div class="page back-cover">
+				<article class="articles">
+					<div class="article-preview">
+						 <span style="font-size: 16px; text-align: center;">
+							Do'a ini diambil dari Kitab <em>Majmu Syarif</em>, Kitab <em>Perukunan&nbsp;Melayu,</em> dan Kitab <em>Maslakul Akhyar</em> yang biasa dipraktikkan di masyarakat.
+						 </span>
+					</div>
+				</article>
+				<article class="articles">
+					<div class="article-preview">
+						<!-- Referensi -->
+						 <span style="font-size: 16px; text-align: center;">
+							Referensi : <strong><a href="https://islam.nu.or.id/syariah/ini-bacaan-talqin-dan-tahlil-mayit-VKm62">NU Online</a></strong><br>
+							Penulis : <strong><a href="https://nu.or.id/author/alhafiz-kurniawan">Alhafiz Kurniawan</a></strong><br>
+							Editor : <strong>SuperMiie</strong>
+						 </span>
+					</div>
+				</article>
+				<article class="articles">
+					<div class="article-preview">
+						 <span style="font-size: 16px; text-align: center;">
+							<i>
+								Dirangkum pada : <br>
+								<strong>20 Jumadil Awal, 1446</strong> <br><br>
+								Lokasi : <br>
+								<strong>Kel. Karang Timur, Kec. Karang tengah, Kota Tangerang (15157)</strong>
+							</i>
+						 </span>
+					</div>
+				</article>
+			</div>
+			<div class="page back-cover" dir="rtl">
+				<article class="articles">
+					<div class="article-preview">
+						<div class="arabic" style="text-align: center;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">۞اَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ۞</span><br>
+								<span style="line-height:2;"> ۞بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ۞</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;"> الْحَمْدُ لِلهِ رَبِّ الْعَالَمِيْنَ حَمْدَ الشَّاكِرِيْنَ حَمْدَ النَّاعِمِيْنَ حَمْدًا يُّوَافِى نِعَمَهُ وَيُكَافِىءُ مَزِيْدَهُ، يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِيْ لِجَلَالِ وَجْهِكَ وَعَظِيْمِ سُلْطَانِكَ.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">سُبْحَانَكَ لَا نُحْصِى ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ، فَلَكَ الحَمْدُ قَبْلَ الرِّضَى وَلَكَ الحَمْدُ بَعْدَ الرِّضَى وَلَكَ الحَمْدُ إِذَا رَضِيْتَ عَنَّا دَائِمًا أَبَدًا.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right; margin-bottom: 2rem;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اللَّهُمَّ صَلِّ علَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى اَلِ سَيِّدِنَا مُحِمَّدٍ.</span>
+							</span>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="page back-cover" dir="rtl">
+				<article class="articles">
+					<div class="article-preview">
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اللَّهُمَّ كَمَا خَصَّصْتَنَا بِكِتَابِكَ الكَرِيْمِ وَهَدَيْتَنَا إِلَى صِرَاتِكَ المُسْتَقِيْمِ، أَصْلِحْ بِهِ مِنَّا جَمِيْعَ مَا فَسَدَ وَطَهِّرْ بِهِ مِنَّا مَا ظَهَرَ وَمَا بَطَنَ.</span>
+							</span>
+						</div>    
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اللَّهُمَّ اشْرَحْ بِالقُرْآنِ صُدُوْرَنَا وَيَسِّرْ بِهِ أُمُوْرَنَا وَعَظِّمْ بِهِ أُجُوْرَنَا وَحَسِّنْ بِهِ أَخْلَاقَنَا وَوَسِّعْ بِهِ أَرْزَاقَنَا وَنَوِّرْ بِهِ قُبُوْرَنَا.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اللَّهُمَّ تَقَبَّلْ وَاَوْصِلْ ثَوَاَبَ مَا قَرَأْنَاهُ مِنْ الْقُرْاَنِ الْعَظِيْمِ وَمَا هَلَلْنَا وَمَا سَبَّحْنَا وَمَا اسْتَغْفَرْنَا وَمَا صَلَّيْنَا عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">هَدِيَّةً مِنَّا وَاصِلَةً وَرَحْمَةً نَازِلَةً وَبَرَكَةً شَامِلَةً اِلَى</span>
+							</span>
+						</div>  
+					</div>
+				</article>
+			</div>
+			<div class="page back-cover" dir="rtl">
+				<article class="articles">
+					<div class="article-preview">
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">حَضَرَاتِ حَبِيْبِنَا وَشَفِيْعِنَا وَقُرَّةِ اَعْيُنِنَا سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">وَاِلَى جَمِيْعِ إِخْوَانِهِ مِنَ الْأَنْبِيَاءِ وَالْمُرْسَلِيْنَ وَالْأَوْلِيَاءِ وَالشُّهَدَاءِ وَالصَّالِحِيْنَ وَالصَّحَابَةِ وَالتَّابِعِيْنَ وَالْعُلَمَاءِ الْعَامِلِيْنَ وَالْمُصَنِّفِيْنَ الْمُخْلِصِيْنَ وَجَمِيْعِ الْمُجَاهِدِيْنَ فِي سَبِيْلِ اللهِ رَبِّ الْعَالَمِيْنَ وَالْمَلَائِكَةِ الْمُقَرَّبِيْنَ.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right; margin-top: 0.5rem;">
+							<span style="font-size:24px;">
+								<span style="line-height:2;">خُصُوْصًا إِلَى أَرْوَاحِ جَمِيْعِ أَهْلِ الْقُبُوْرِ مِنَ الْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ مِنْ مَشَارِقِ الْاَرْضِ إِلَى مَغَارِبِهَا بَرِّهَا وَبَحْرِهَا، خُصُوْصًا إِلَى آبَاءِنَا وَاُمَّهَاتِنَا وَأَجْدَادِنَا وَجَدَّاتِنَا وَنَخَصُّ خَصُوْصًا إِلَى مَنِ اجْتَمَعْنَا هَهُنَا بِسَبَبِهِ وَلِاَجْلِهِ.</span>
+							</span>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="page back-cover" dir="rtl">
+				<article class="articles">
+					<div class="article-preview">
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">وَنَخَصُّ خَصُوْصًاإِلَى الرُوحِ …</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right; margin-top: 1rem;">
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اللَّهُمَّ أَنْزِلْ فِيْ قَبْرِهِ الرَّحْمَةَ وَالضِّيَاءَ وَالنُّوْرَ، وَالبَهْجَةَ وَالرَوْحَ وَالرَيْحَانَ وَالسُّرُوْرَ، مِنْ يَوْمِنَا هَذَا إِلَى يَوْمِ البَعْثِ وَالنُّشُوْرِ، إِنَّكَ مَلِكٌ رَبٌّ غَفُوْرٌ.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right; margin-top: 1rem;">
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اللَّهُمَّ اجْعَلِ القُرْآنَ العَظِيْمَ فِي قَبْرِهِ مُؤْنِسًا، وَفِي القِيَامَةِ شَافِعًا، وَفِي الحَشْرِ ضِيَاءً وَظِلًّا وَدَلِيْلًا، وَفِي المِيْزَانِ رَاجِحًا، وَعَلَى الصِّرَاطِ نُوْرًا وَقَائِدًا، وَعَنِ النَّارِ سِتْرًا وَحِجَابًا، وَفِي الجَنَّةِ رَفِيْقًا.</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right; margin-top: 0.5rem;">
+							<span style="font-size:24px;">
+								<span style="line-height:2;">اَللَّهُمَّ اغْفِرْ لَهُمْ وَارْحَمْهُمْ وَعَافِهِمْ وَاعْفُ عَنْهُمْ. اللَّهُمَّ اَنْزِلِ الرَّحْمَةَ وَالْمَغْفِرَةَ عَلَى أَهْلِ الْقُبُوْرِ مِنْ أَهْلِ لَاالَهَ اِلَّا اللهُ مُحَمَّدٌ رَّسُوْلُ اللهِ.</span>
+							</span>
+						</div> 
+					</div>
+				</article>
+			</div>
+			<div class="page back-cover" dir="rtl">
+				<article class="articles">
+					<div class="article-preview">
+						<div class="arabic" style="text-align: right;"><br>
+							<span style="font-size:24px;">
+								<span style="line-height:2;">رَبَّنَا أَرِنَا الْحَقَّ حَقًّا وَارْزُقْنَا اتِّبَاعَهُ، وَأَرِنَا الْبَاطِلَ بَاطِلًا وَارْزُقْنَا اجْتِنَابَهُ. رَبَّنَا آتِنَا فِى الدُّنْيَا حَسَنَةً، وَفِى الْآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ، سًبْحَانَ رَبَّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُوْنَ، وَسَلَامٌ عَلَى الْمُرْسَلِيْنَ، وَالْحَمْدُ لِلهِ رَبِّ الْعَلَمِيْنَ. اَلْفَاتِحَةْ …</span>
+							</span>
+						</div>
+						<div class="arabic" style="text-align: right; margin-top: 0.2rem;">
+							<span style="font-size:23px;">
+								<span style="line-height:2;">وَاعْفُ عَنَّا يَا كَرِيْمُ *٢ &nbsp;بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ ارْحَمْنَا. اَللَّهُمَّ بِحَقِّ الفَاتِحَةِ وَبِسِرِّ الفَاتِحَةِ وَبِكَرَامَةِ الفَاتِحَةِ، يَا فَارِجَ الهَمِّ يَا كَاشِفَ الغَمِّ يَا مَنْ لِعَبْدِهِ يَغْفِرُ وَيَرْحَمُ، اَللَّهُمَّ اغْفِرْ ذُنُوْبَنَا وَاسْتُرْ عُيُوْبَنَا وَفَرِّجْ هُمُوْمَنَا وَاكْشِفْ غُمُوْمَنَا وَأَصْلِحْ ذَاتَ بَيْنِنَا، دَعْوَاهُمْ فِيْهَا سُبْحَانَكَ اَللَّهُمَّ وَتَحِيَّتُهُمْ فِيْهَا سَلَامٌ، وَآخِرُ دَعْوَاهُمْ أَنِ الْحَمْدُ لِلهِ رَبِّ الْعَلَمِيْنَ</span>
+							</span>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="page cover">
+				<img src="cover/back_cover.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function() {
+    function loadApp() {
+        const isMobile = /iPhone|iPad|iPod|Mobi|Android/i.test(navigator.userAgent);
+        const options = isMobile ? {
+            width: 430,
+            height: 650,
+            elevation: 50,
+            inclination: 50,
+            display: 'single',
+            autocenter: true,
+            acceleration: true,
+            gradients: true,
+            zoom: 2,
+            duration: 50
+        } : {
+            width: 922,
+            height: 600,
+            elevation: 50,
+            gradients: true,
+            autoCenter: true
+        };
+
+        $('.flipbook').turn(options);
+    }
+
+    // Check for CSS transform support 
+	if (Modernizr.csstransforms) { 
+		$.getScript('assets/plugins/lib/turn.js', loadApp); 
+	} else { 
+		$.getScript('assets/plugins/lib/turn.html4.min.js', loadApp); 
+	}
+
+    // Re-check on window resize
+    $(window).resize(function() {
+        loadApp();
+    });
+});
+</script>
 </body>
 </html>
